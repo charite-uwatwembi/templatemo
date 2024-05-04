@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="h-1400">
-    <header>
-        <nav class="flex bg-blue-500 justify-between items-center px-40 py-8 ">
-            <div>
-                <img src="/images/logo.png" alt="">
-            </div>
-            <div>
-                <ul class="flex  items-center gap-8 text-white">
-                    <li>Home</li>
-                    <li>Our Shop</li>
-                    <li>Product Details</li>
-                    <li>Contact Us</li>
-                    <li  class=" rounded-full bg-red-400 p-4">SIGN IN</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    
 
     <main>
-        <section class="h-1400 bg-gradient-to-r from-blue-600 to-sky-500 text-white rounded-b-3xl mb-20 relative py-12">
+        
+            <section class="bg-[url('/images/banner-bg.jpeg')] h-1400 text-white rounded-b-3xl mb-20 relative py-12">
+                <header>
+                    <nav id="fixed-header" class="flex bg-transparent justify-between items-center px-40 pb-12 pt-2 fixed w-full z-50">
+                        <div>
+                            <img src="/images/logo.png" alt="">
+                        </div>
+                        <div>
+                            <ul class="flex items-center gap-8 text-white text-lg">
+                                <li class="rounded-full bg-blue-500 p-2 px-4">Home</li>
+                                <li>Our Shop</li>
+                                <li>Product Details</li>
+                                <li>Contact Us</li>
+                                <li class="rounded-full bg-red-400 p-2 px-4 font-bold">SIGN IN</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                
             
-            <div class="flex justify-between items-center px-40 py-8">
+                
+            
+            <div class="flex justify-between items-center px-40 py-8 mt-32">
             <div class="flex flex-col space-y-6">
                 <h2>WELCOME TO LUGX</h2>
                 <h1 class="text-5xl font-bold ">BEST GAMING SITE <br>EVER!</h1>
@@ -312,7 +317,7 @@
 
         <section>
             
-            <div  class=" relative flex justify-center items-center h-screen">
+            <div  class=" relative flex justify-center items-center h-screen py-12 mb-72">
                 <img src="/images/cta-bg.jpeg" alt="" class="rounded-3xl ">
             
 
@@ -339,6 +344,28 @@
             </div>
             </div>
         </section>
+
+        
     </main>
+    <footer>
+        <div class="bg-[url('/images/footer-bg.jpeg')] p-12 rounded-t-full ">
+            <p class="text-white text-center py-4   ">Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.addEventListener('scroll', function() {
+                var header = document.getElementById('fixed-header');
+                if (window.pageYOffset > 0) { // Check if scrolled down
+                    header.classList.add('bg-blue-500', 'rounded-b-full'); // Add classes for blue background and rounded bottom
+                } else {
+                    header.classList.remove('bg-blue-500', 'rounded-b-full'); // Remove classes if not scrolled down
+                }
+            });
+        });
+        </script>
+        
+        
 </body>
 </html>
