@@ -9,11 +9,11 @@
 <body class="h-1400">
     
 
-    <main>
+    <main class="">
         
             <section class="bg-[url('/images/banner-bg.jpeg')] h-1400 text-white rounded-b-3xl mb-20 relative py-12">
                 <header>
-                    <nav id="fixed-header" class="flex bg-transparent justify-between items-center px-40 pb-12 pt-2 fixed w-full z-50">
+                    <nav id="fixed-header" class="flex bg-transparent justify-between items-center px-40 pb-12 pt-2  w-full z-50">
                         <div>
                             <img src="/images/logo.png" alt="">
                         </div>
@@ -86,17 +86,18 @@
                 </div>
 
                 <div class="flex gap-7 px-40">
-                    <div class=" bg-zinc-100 rounded-xl">
-                        <div class=" relative mx-6 w-full">
-                            <img src="/images/top-game-01.jpeg" alt="" class="rounded-3xl" >
-                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-32 px-2 " >
+                    
+                    <div class=" bg-zinc-100 rounded-3xl">
+                        <div class=" relative">
+                        <img src="/images/trending-01.jpeg" alt="" class="rounded-3xl w-60" >
+                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-40 px-2 " >
                                 <p >$28</p>
                                 <p class = "font-bold text-lg">$20</p>
                             </div>
                         </div>
                         
                         
-                            <div class="flex  p-3 gap-14 ">
+                            <div class="flex  p-3 gap-16 ">
                                 <div class="flex-col">
                                     <h1>Action</h1>
                                     <p class="font-bold"> Assasin Creed</p>
@@ -111,17 +112,17 @@
                         
 
                     </div>
-                    <div class=" bg-zinc-100 rounded-xl">
-                        <div class=" relative mx-6 w-full">
-                            <img src="/images/top-game-02.jpeg" alt="" class="rounded-3xl" >
-                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-32 px-2 " >
+                    <div class=" bg-zinc-100 rounded-3xl">
+                        <div class=" relative">
+                        <img src="/images/trending-02.jpeg" alt="" class="rounded-3xl w-60" >
+                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-40 px-2 " >
                                 <p >$28</p>
                                 <p class = "font-bold text-lg">$20</p>
                             </div>
                         </div>
                         
                         
-                            <div class="flex  p-3 gap-14 ">
+                            <div class="flex  p-3 gap-16 ">
                                 <div class="flex-col">
                                     <h1>Action</h1>
                                     <p class="font-bold"> Assasin Creed</p>
@@ -136,17 +137,17 @@
                         
 
                     </div>
-                    <div class=" bg-zinc-100 rounded-xl">
-                        <div class=" relative mx-6 w-full">
-                            <img src="/images/top-game-03.jpeg" alt="" class="rounded-3xl" >
-                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-32 px-2 " >
+                    <div class=" bg-zinc-100 rounded-3xl">
+                        <div class=" relative">
+                        <img src="/images/trending-03.jpeg" alt="" class="rounded-3xl w-60" >
+                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-40 px-2 " >
                                 <p >$28</p>
                                 <p class = "font-bold text-lg">$20</p>
                             </div>
                         </div>
                         
                         
-                            <div class="flex  p-3 gap-14 ">
+                            <div class="flex  p-3 gap-16 ">
                                 <div class="flex-col">
                                     <h1>Action</h1>
                                     <p class="font-bold"> Assasin Creed</p>
@@ -161,17 +162,17 @@
                         
 
                     </div>
-                    <div class=" bg-zinc-100 rounded-xl">
-                        <div class=" relative mx-6 w-full">
-                            <img src="/images/top-game-04.jpeg" alt="" class="rounded-3xl" >
-                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-32 px-2 " >
+                    <div class=" bg-zinc-100 rounded-3xl">
+                        <div class=" relative">
+                        <img src="/images/trending-04.jpeg" alt="" class="rounded-3xl w-60" >
+                            <div class="text-white rounded-xl bg-blue-600 absolute top-4 left-40 px-2 " >
                                 <p >$28</p>
                                 <p class = "font-bold text-lg">$20</p>
                             </div>
                         </div>
                         
                         
-                            <div class="flex  p-3 gap-14 ">
+                            <div class="flex  p-3 gap-16 ">
                                 <div class="flex-col">
                                     <h1>Action</h1>
                                     <p class="font-bold"> Assasin Creed</p>
@@ -193,7 +194,7 @@
         </section>
 
         <section>
-            <div class=" bg-zinc-100 rounded-full px-40 p-12  space-y-6">
+            <div class=" bg-zinc-100 rounded-full px-40 p-12   space-y-6">
                 <div Class="flex justify-between ">
                     <div>
                         <h1 class="text-red-400 font-bold">TOP GAMES</h1>
@@ -357,8 +358,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             window.addEventListener('scroll', function() {
                 var header = document.getElementById('fixed-header');
-                if (window.pageYOffset > 0) { // Check if scrolled down
-                    header.classList.add('bg-blue-500', 'rounded-b-full'); // Add classes for blue background and rounded bottom
+                if (window.pageYOffset > 0) {
+                    header.classList.add('bg-blue-500', 'rounded-b-full');
                 } else {
                     header.classList.remove('bg-blue-500', 'rounded-b-full'); // Remove classes if not scrolled down
                 }
